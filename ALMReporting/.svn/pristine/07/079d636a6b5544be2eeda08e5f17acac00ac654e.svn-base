@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ALMReporting</display-name>
+  <servlet>
+    <servlet-name>ServletAdaptor</servlet-name>
+    <servlet-class>
+  	com.sun.jersey.server.impl.container.servlet.ServletAdaptor</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAdaptor</servlet-name>
+    <url-pattern>/rs/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    	<description>Log Manager servlet to control logging</description>
+    	<display-name>LogManager</display-name>
+    	<servlet-name>LogManager</servlet-name>
+    	<servlet-class>com.homedepot.ta.aa.log4j.LogManager</servlet-class>
+    </servlet>
+  	<servlet-mapping>
+    	<servlet-name>LogManager</servlet-name>
+    	<url-pattern>/LogManager</url-pattern>
+  	</servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreatePDFServlet</display-name>
+    <servlet-name>CreatePDFServlet</servlet-name>
+    <servlet-class>com.homedepot.is.as.util.CreatePDFServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreatePDFServlet</servlet-name>
+    <url-pattern>/CreatePDFServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreateReportServlet</display-name>
+    <servlet-name>CreateReportServlet</servlet-name>
+    <servlet-class>com.homedepot.is.as.util.CreateReportServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateReportServlet</servlet-name>
+    <url-pattern>/CreateReportServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

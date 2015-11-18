@@ -1,0 +1,16 @@
+#THD Build Package Properties
+#Wed Nov 26 17:00:17 EST 2014
+project.jenkins.job=ALMReporting
+opsware.deploy.email1=velmurugan_thangavel@homedepot.com
+opsware.release=true
+opsware.policy.release=1.0
+project.jenkins.svn.location=https\://svn.homedepot.com/svn/SSCServices/QualityCenterReporting/branches/ALMReporting
+opsware.policy.name=SWP_TomcatGrid-AppSvr_isasALMReporting-Rel-
+opsware.policy.pkg1.vsn-rel=1.2-1.el5
+project.fms.code=7296
+opsware.policy.pkg1.name=hd-aa-CrAppSvr_isasALMReporting
+opsware.deploy.lcp=QA
+project.tomcat.context.root=ALMReporting
+build.suppress=false
+opsware.deploy.type=custom
+project.tomcat.app.server=isasALMReporting

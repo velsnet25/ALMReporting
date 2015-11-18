@@ -1,0 +1,6 @@
+project.system=is
+project.subsystem=as
+project.name=ALMReporting
+project.revision=1.0
+project.buildtype.name=war-tc6grid
+

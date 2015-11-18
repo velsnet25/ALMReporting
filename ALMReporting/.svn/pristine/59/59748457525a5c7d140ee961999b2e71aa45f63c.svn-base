@@ -1,0 +1,7 @@
+#THD Build Properties
+#Wed Nov 26 17:00:17 EST 2014
+project.subsystem=as
+project.name=ALMReporting
+project.buildtype.name=war-tc6grid
+project.system=is
+project.revision=1.0
